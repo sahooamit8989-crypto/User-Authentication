@@ -1,0 +1,96 @@
+/* Reset default browser styles for consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set base styles for the body to ensure good visibility */
+body {
+  font-family: 'Arial', sans-serif; /* Clean, widely available font */
+  background-color: #f4f4f9; /* Light gray background for contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height to center content */
+  color: #333; /* Dark gray text for readability */
+}
+
+/* Container for the form (used in Signup and Login components) */
+form {
+  background-color: #ffffff; /* White background for the form card */
+  padding: 2rem; /* Generous padding for spacing */
+  border-radius: 8px; /* Rounded corners for modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: 100%;
+  max-width: 400px; /* Limit width for readability */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Space between form elements */
+}
+
+/* Style for input fields */
+input {
+  padding: 0.75rem; /* Comfortable padding inside inputs */
+  font-size: 1rem; /* Readable font size */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px; /* Slightly rounded corners */
+  outline: none; /* Remove default outline */
+  transition: border-color 0.3s ease; /* Smooth transition for focus */
+}
+
+/* Focus state for inputs */
+input:focus {
+  border-color: #007bff; /* Blue border on focus for visibility */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3); /* Subtle glow effect */
+}
+
+/* Placeholder text styling */
+input::placeholder {
+  color: #999; /* Light gray for placeholders */
+  font-size: 0.95rem; /* Slightly smaller for distinction */
+}
+
+/* Style for the submit button */
+button {
+  padding: 0.75rem; /* Comfortable button size */
+  font-size: 1.1rem; /* Slightly larger for emphasis */
+  background-color: #007bff; /* Blue background for prominence */
+  color: #ffffff; /* White text for contrast */
+  border: none; /* No border for clean look */
+  border-radius: 4px; /* Match input rounding */
+  cursor: pointer; /* Hand cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover effect for button */
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Disabled state for button (if needed in future) */
+button:disabled {
+  background-color: #cccccc; /* Gray out if disabled */
+  cursor: not-allowed; /* Indicate non-clickable */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 500px) {
+  form {
+    padding: 1.5rem; /* Reduce padding on small screens */
+    max-width: 90%; /* Use more screen width */
+  }
+
+  input,
+  button {
+    font-size: 0.9rem; /* Slightly smaller font for mobile */
+  }
+}
+
+/* Add a heading for the form (optional, can be added in JSX) */
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
